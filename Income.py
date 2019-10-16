@@ -40,7 +40,6 @@ df_concat['Profession'] = data_smoothening(df_concat, 'Profession', 'Income', 50
 
 
 df_concat.drop("Year of Record", axis=1)
-df_concat.drop("Country", axis=1)
 df_concat.drop("Wears Glasses", axis=1)
 
 data = pd.get_dummies(df_concat, columns=["Gender"], drop_first = True)
